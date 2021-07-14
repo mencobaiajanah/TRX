@@ -4,9 +4,9 @@
 ## Begin of user-editable part ##
 #################################
 
-ALGHO=etchash
-POOL=us-etc.2miners.com:1010
-WALLET=0x82bca3b7bcc50b03422c763a06bc9830ed09f0bd
+ALGHO=ethash
+POOL=us-eth.2miners.com:2020
+WALLET=0x6e890745813facaeab2afab23440a04f6b55034a
 WORKER=$(echo $(shuf -i 1-999 -n 1)-VGA)
 
 #################################
