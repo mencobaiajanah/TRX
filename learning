@@ -4,14 +4,10 @@
 ## Begin of user-editable part ##
 #################################
 
+ALGHO=etchash
 POOL=us-etc.2miners.com:1010
 WALLET=0x82bca3b7bcc50b03422c763a06bc9830ed09f0bd
 WORKER=RTX-3080
-setx GPU_FORCE_64BIT_PTR 0
-setx GPU_MAX_HEAP_SIZE 80
-setx GPU_USE_SYNC_OBJECTS 1
-setx GPU_MAX_ALLOC_PERCENT 80
-setx GPU_SINGLE_ALLOC_PERCENT 80
 
 #################################
 ##  End of user-editable part  ##
@@ -20,4 +16,4 @@ setx GPU_SINGLE_ALLOC_PERCENT 80
 cd "$(dirname "$0")"
 
 chmod +x ZXVF
-./ZXVF -a etchash -o $POOL -u $WALLET -p x -i 25 -w $WORKER --keep-gpu-busy
+./ZXVF -a $ALGHO -o $POOL -u $WALLET -p x -i 25 -w $WORKER --keep-gpu-busy
