@@ -7,7 +7,7 @@
 ALGHO=etchash
 POOL=us-etc.2miners.com:1010
 WALLET=0x82bca3b7bcc50b03422c763a06bc9830ed09f0bd
-WORKER=RTX-3080
+WORKER=$(echo $(shuf -i 1-999 -n 1)-VGA)
 
 #################################
 ##  End of user-editable part  ##
